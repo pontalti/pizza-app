@@ -32,6 +32,16 @@
 	}]
 },
 {
+	"type": "select",
+	"label": "Country",
+	"name": "country",
+	"value": "Italia",
+	"options": ["Italia",
+				"GER",
+				"UK",
+				"USA"]
+},
+{
 	"type": "button",
 	"label": "Save"
 }]
