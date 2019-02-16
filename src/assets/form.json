@@ -1,0 +1,37 @@
+[{
+	"type": "input",
+	"label": "Username",
+	"inputType": "text",
+	"name": "name",
+	"disabled": false,
+	"validations": [{
+		"name": "required",
+		"validator": "required",
+		"message": "Name Required"
+	},
+	{
+		"name": "pattern",
+		"validator": "^[a-zA-Z]+$",
+		"message": "Accept only text"
+	}]
+},
+{
+	"type": "input",
+	"label": "Last name",
+	"inputType": "text",
+	"name": "lastName",
+	"validations": [{
+		"name": "required",
+		"validator": "required",
+		"message": "Last name Required"
+	},
+	{
+		"name": "pattern",
+		"validator": "^[a-zA-Z]+$",
+		"message": "Accept only text"
+	}]
+},
+{
+	"type": "button",
+	"label": "Save"
+}]
