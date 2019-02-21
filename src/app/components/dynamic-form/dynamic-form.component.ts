@@ -2,6 +2,8 @@ import {Component, EventEmitter, Input, OnInit, Output, ComponentFactoryResolver
 import {FormGroup, FormBuilder, Validators} from "@angular/forms";
 
 import { FieldConfig } from '../../share/interfaces/FieldConfig-interface';
+import { ValidatorService } from 'src/app/share/services/validator.service';
+
 
 @Component({
     exportAs: "dynamicForm",
@@ -32,7 +34,7 @@ export class DynamicFormComponent implements OnInit {
       return  this.form.value;
     }
 
-    constructor(private fb: FormBuilder, private componentFactoryResolver: ComponentFactoryResolver) {}
+    constructor(private fb: FormBuilder, private validatorService : ValidatorService) {}
   
     ngOnInit() {
       this.form = this.createControl();
@@ -55,7 +57,7 @@ export class DynamicFormComponent implements OnInit {
         if (field.type === "button") return;
         const control = this.fb.control(
           field.value,
-          this.bindValidations(field.validations || [])
+          this.validatorService.bindValidations(field.validations || [])
         );
         if(field.disabled){
           control.disable();
@@ -63,21 +65,6 @@ export class DynamicFormComponent implements OnInit {
         group.addControl(field.name, control);
       });
       return group;
-    }
-  
-    bindValidations(validations: any) {
-      if (validations.length > 0) {
-        const validList = [];
-        validations.forEach(valid => {
-          if("required"===valid.name){
-            validList.push(Validators.required);
-          }else if("pattern"===valid.name){
-            validList.push(Validators.pattern(valid.validator));
-          }
-        });
-        return Validators.compose(validList);
-      }
-      return null;
     }
   
     validateAllFormFields(formGroup: FormGroup) {

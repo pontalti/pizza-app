@@ -1,5 +1,3 @@
-import { Validator } from './validator-interface';
-
 export interface FieldConfig {
     type: string;
     label?: string;
@@ -9,5 +7,5 @@ export interface FieldConfig {
     options?: string[];
     collections?: any;
     value?: any;
-    validations?: Validator[];
+    validations?: any[];
   }

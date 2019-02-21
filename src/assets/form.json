@@ -6,12 +6,11 @@
 	"disabled": false,
 	"validations": [{
 		"name": "required",
-		"validator": "required",
 		"message": "Name Required"
 	},
 	{
 		"name": "pattern",
-		"validator": "^[a-zA-Z]+$",
+		"validator": ["^[a-zA-Z]+$"],
 		"message": "Accept only text"
 	}]
 },
@@ -21,25 +20,54 @@
 	"inputType": "text",
 	"name": "lastName",
 	"validations": [{
+		"name": "nullValidator",
+		"message": "Last name Required"
+	},
+	{
 		"name": "required",
-		"validator": "required",
 		"message": "Last name Required"
 	},
 	{
 		"name": "pattern",
-		"validator": "^[a-zA-Z]+$",
+		"validator": ["^[a-zA-Z]+$"],
 		"message": "Accept only text"
 	}]
 },
 {
-	"type": "select",
-	"label": "Country",
-	"name": "country",
-	"value": "Italia",
-	"options": ["Italia",
-				"GER",
-				"UK",
-				"USA"]
+	"type": "input",
+	"label": "Age",
+	"inputType": "number",
+	"name": "age",
+	"validations": [{
+		"name": "nullValidator",
+		"message": "Last name required"
+	},
+	{
+		"name": "required",
+		"message": "Age is required"
+	},
+	{
+		"name": "min",
+		"validator": [18],
+		"message": "Min age is 18"
+	},
+	{
+		"name": "pattern",
+		"validator": ["^[0-9]*$"],
+		"message": "Accept only numbers"
+	}]
+},
+{
+	"type": "radiobutton",
+	"label": "Gender",
+	"name": "gender",
+	"options": ["Male",
+				"Female"],
+	"value": "Male",
+	"validations": [{
+		"name": "required",
+		"message": "Gender is required"
+	}]
 },
 {
 	"type": "button",

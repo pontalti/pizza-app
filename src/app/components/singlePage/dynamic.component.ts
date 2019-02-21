@@ -10,7 +10,7 @@ import { FieldConfig } from '../../share/interfaces/FieldConfig-interface';
                 <div class="form">
                     <div style="text-align:center">
                         <h1>
-                        Dynamic Pizza Form
+                        Registration Form
                         </h1>
                     </div>
                     <dynamic-form   [fields]="regConfig" 

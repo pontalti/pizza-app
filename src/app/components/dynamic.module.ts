@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { InputComponent } from './material/input/input.component';
 import { ButtonComponent } from './material/button/button.component';
@@ -8,10 +8,12 @@ import { SelectComponent } from './material/select/select.component';
 import { DateComponent } from './material/date/date.component';
 import { RadiobuttonComponent } from './material/radiobutton/radiobutton.component';
 import { CheckboxComponent } from './material/checkbox/checkbox.component';
+import { DynamicFieldDirective } from './dynamic-field/dynamic-field.directive';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { MaterialModule } from '../share/modules/material.module';
 import { DynamicComponent } from './singlePage/dynamic.component';
-import { DynamicFieldDirective } from './dynamic-field/dynamic-field.directive';
+import { TabDynamicFormComponent } from './material/tab/Tab-dynamic-form.component';
+import { TabDynamicComponent } from './tabPage/tab-dynamic.component';
 
 @NgModule({
     declarations    : [
@@ -23,7 +25,9 @@ import { DynamicFieldDirective } from './dynamic-field/dynamic-field.directive';
                         CheckboxComponent,
                         DynamicFieldDirective,
                         DynamicFormComponent,
-                        DynamicComponent
+                        DynamicComponent,
+                        TabDynamicComponent,
+                        TabDynamicFormComponent
                       ],
     imports         : [
                         CommonModule,
@@ -51,7 +55,8 @@ import { DynamicFieldDirective } from './dynamic-field/dynamic-field.directive';
                         DynamicFieldDirective,
                         DynamicFormComponent,
                         DynamicComponent,
-
+                        TabDynamicComponent,
+                        TabDynamicFormComponent
                     ]
 })
 export class DynamicModule{

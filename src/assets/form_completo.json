@@ -61,7 +61,8 @@
 	"type": "radiobutton",
 	"label": "Gender",
 	"name": "gender",
-	"options": ["Male", "Female"],
+	"options": ["Male",
+	"Female"],
 	"value": "Male"
 },
 {
@@ -78,11 +79,10 @@
 	"type": "select",
 	"label": "Country",
 	"name": "country",
-	"value": "UK",
-	"options": ["Italia",
-				"GER",
-				"UK",
-				"USA"]
+	"value": "Italia",
+	"options": ["italia",
+	"UK",
+	"USA"]
 },
 {
 	"type": "checkbox",

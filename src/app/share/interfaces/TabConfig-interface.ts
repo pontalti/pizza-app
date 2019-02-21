@@ -1,8 +1,7 @@
 import { FieldConfig } from './FieldConfig-interface';
-import { Type } from '@angular/core';
 
 export interface TabConfig{
-    type: Type<any>;
+    type: string;
     label: string;
     ariaLabel?: string;
     ariaLabelledby?: string;
