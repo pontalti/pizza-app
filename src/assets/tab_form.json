@@ -1,0 +1,76 @@
+[{
+	"type": "Tab",
+	"label": "Tab 1",
+	"fields": [{
+		"type": "input",
+		"label": "User name",
+		"inputType": "text",
+		"name": "name",
+		"disabled": false,
+		"validations": [{
+			"name": "nullValidator",
+			"message": "Last name Required"
+		},
+		{
+			"name": "required",
+			"message": "Last name Required"
+		},
+		{
+			"name": "pattern",
+			"validator": ["^[a-zA-Z]+$"],
+			"message": "Accept only text"
+		}]
+	}]
+},
+{
+	"type": "Tab",
+	"label": "Tab 2",
+	"fields": [{
+		"type": "input",
+		"label": "Surname",
+		"inputType": "text",
+		"name": "surname",
+		"disabled": false,
+		"validations": [{
+			"name": "nullValidator",
+			"message": "Last name Required"
+		},
+		{
+			"name": "required",
+			"message": "Last name Required"
+		},
+		{
+			"name": "pattern",
+			"validator": ["^[a-zA-Z]+$"],
+			"message": "Accept only text"
+		}]
+	}]
+},
+{
+	"type": "Tab",
+	"label": "Tab 3",
+	"fields": [{
+		"type": "input",
+		"label": "Age",
+		"inputType": "number",
+		"name": "age",
+		"validations": [{
+			"name": "nullValidator",
+			"message": "Last name required"
+		},
+		{
+			"name": "required",
+			"message": "Age is required"
+		},
+		{
+			"name": "min",
+			"validator": [18],
+			"message": "Min age is 18"
+		},
+		{
+			"name": "pattern",
+			"validator": ["^[0-9]*$"],
+			"message": "Accept only numbers"
+		}]
+	}]
+}]
