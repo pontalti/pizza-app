@@ -16,9 +16,7 @@ import { FieldConfig } from '../../share/interfaces/FieldConfig-interface';
                     <dynamic-form   [fields]="regConfig" 
                                     (submit)="submit($event)">
                     </dynamic-form>
-                    <div class="margin-top">
-                        {{ form.value | json }}
-                    </div>
+
                 </div>
   `
 })

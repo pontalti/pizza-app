@@ -33,6 +33,9 @@ import { ValidatorService } from 'src/app/share/services/validator.service';
                       </button>
 
                     </form>
+                    <div class="margin-top">
+                      {{ form.value | json }}
+                    </div>
                 </div>
                 `
 })

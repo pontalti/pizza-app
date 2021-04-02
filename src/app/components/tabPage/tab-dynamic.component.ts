@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { TabConfig } from 'src/app/share/interfaces/TabConfig-interface';
-import { TabDynamicFormComponent } from '../material/tab/Tab-dynamic-form.component';
 import { ActivatedRoute } from '@angular/router';
+import { TabDynamicFormComponent } from "../material/tab/tab-dynamic-form.component";
 
 @Component({
     selector: 'app-dynamicTab',
@@ -17,9 +17,6 @@ import { ActivatedRoute } from '@angular/router';
                             [tabs]="tabConfig"
                             (submit)="submit($event)">
                         </app-tab-dynamic-form>
-                    </div>
-                    <div class="margin-top">
-                        {{ form.value | json }}
                     </div>
                 </div>
     `

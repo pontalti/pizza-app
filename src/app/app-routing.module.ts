@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { DynamicResolver } from './components/singlePage/dynamic.resolver';
 import { DynamicComponent } from './components/singlePage/dynamic.component';
 import { TabDynamicComponent } from './components/tabPage/tab-dynamic.component';

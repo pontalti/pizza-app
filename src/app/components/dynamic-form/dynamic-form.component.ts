@@ -20,6 +20,9 @@ import { ValidatorService } from 'src/app/share/services/validator.service';
                     [group]="form">
                   </ng-container>
           </form>
+          <div class="margin-top">
+              {{ form.value | json }}
+          </div>
     `,
     styles: []
   })

@@ -6,6 +6,7 @@ import { HttpClientModule  } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DynamicModule } from './components/dynamic.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations    : [
@@ -16,7 +17,8 @@ import { DynamicModule } from './components/dynamic.module';
                       BrowserAnimationsModule,
                       HttpClientModule,
                       AppRoutingModule,
-                      DynamicModule
+                      DynamicModule,
+                      NgbModule
                     ],
   providers       : [],
   bootstrap       : [

@@ -12,8 +12,8 @@ import { DynamicFieldDirective } from './dynamic-field/dynamic-field.directive';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { MaterialModule } from '../share/modules/material.module';
 import { DynamicComponent } from './singlePage/dynamic.component';
-import { TabDynamicFormComponent } from './material/tab/Tab-dynamic-form.component';
 import { TabDynamicComponent } from './tabPage/tab-dynamic.component';
+import { TabDynamicFormComponent } from './material/tab/tab-dynamic-form.component';
 
 @NgModule({
     declarations    : [
