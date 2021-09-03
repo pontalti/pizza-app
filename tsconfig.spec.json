@@ -7,7 +7,6 @@
       "jasmine"
     ],
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
   },
