@@ -1,65 +1,125 @@
-# PizzaApp
+# 🍕 PizzaApp - Angular Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+This project is a frontend for managing and displaying pizza-related data, built with Angular and Angular Material.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## ⚙️ Environment
 
-## Code scaffolding
+- **Angular CLI**: 11.2.6  
+- **Node.js**: v14.15.5  
+- **npm**: 7.6.3  
+- **TypeScript**: 4.1.5  
+- **RxJS**: 6.6.7  
+- **OS**: Windows 64-bit  
+- **Ivy**: Enabled  
+- **Angular Packages**:  
+  - @angular/material
+  - @angular/material-moment-adapter
+  - @angular/cdk
+  - ... and other core packages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚀 Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### 1. Install Dependencies
 
-## Running unit tests
+Ensure you have Node.js and npm installed. Then, install Angular CLI globally:
+```bash
+npm install -g @angular/cli@11.2.6
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Navigate to the project directory and install project dependencies:
+```bash
+npm install
+```
 
-## Running end-to-end tests
+### 2. Development Server
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run the application locally:
+```bash
+ng serve
+```
 
-## Further help
+Visit `http://localhost:4200/` in your browser.  
+The app will automatically reload upon source file changes.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
 
-node version
-v14.15.5
+## 🧱 Code Scaffolding
 
-npm version
-7.6.3
+Generate a new component:
+```bash
+ng generate component component-name
+```
 
+You can also generate:
+- Directives
+- Pipes
+- Services
+- Classes
+- Guards
+- Interfaces
+- Enums
+- Modules
+
+Example:
+```bash
+ng generate service pizza
+```
+
+---
+
+## 🛠️ Build
+
+Create a build artifact in the `dist/` directory:
+```bash
+ng build
+```
+
+For production:
+```bash
+ng build --prod
+```
+
+---
+
+## 🧪 Running Tests
+
+### Unit Tests
+Run using [Karma](https://karma-runner.github.io):
+```bash
+ng test
+```
+
+### End-to-End Tests
+Run using [Protractor](http://www.protractortest.org/):
+```bash
+ng e2e
+```
+
+---
+
+## 📚 Resources
+
+For detailed CLI help, run:
+```bash
+ng help
+```
+
+Or visit the official documentation:  
+👉 [Angular CLI Overview and Command Reference](https://angular.io/cli)
+
+---
+
+## 💻 ASCII Art - CLI Info
+
+```
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
    / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
   / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
  /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
                 |___/
-
-
-Angular CLI: 11.2.6
-Node: 14.15.5
-OS: win32 x64
-
-Angular: 11.2.5
-... animations, common, compiler, compiler-cli, core, forms
-... localize, platform-browser, platform-browser-dynamic, router
-Ivy Workspace: Yes
-
-Package                            Version
-------------------------------------------------------------
-@angular-devkit/architect          0.1102.4
-@angular-devkit/build-angular      0.1102.4
-@angular-devkit/core               11.2.4
-@angular-devkit/schematics         11.2.6
-@angular/cdk                       11.2.4
-@angular/cli                       11.2.6
-@angular/material                  11.2.4
-@angular/material-moment-adapter   11.2.4
-@schematics/angular                11.2.6
-@schematics/update                 0.1102.6
-rxjs                               6.6.7
-typescript                         4.1.5
+```
